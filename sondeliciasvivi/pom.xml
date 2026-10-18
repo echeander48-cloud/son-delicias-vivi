@@ -11,4 +11,20 @@
         <maven.compiler.release>17</maven.compiler.release>
         <exec.mainClass>com.mycompany.sondeliciasvivi.RestauranteWeb</exec.mainClass>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.mycompany.sondeliciasvivi.RestauranteWeb</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
